@@ -7,21 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Callum McFadgen | Developer</title>
 
     <script type="text/javascript">
+
           function toggle_visibility(id) {
              var e = document.getElementById(id);
-             if(e.style.display == 'block')
+             if(e.style.display == 'none')
+                e.style.display = 'flex';
+             else if (e.style.display = 'flex')
                 e.style.display = 'none';
-             else
-                e.style.display = 'block';
           }
+
     </script>
 
 </head>
@@ -30,28 +32,75 @@
 <body>
     <div class="wrapper">
 
-        <header id="start">
-            <h1>Hi, I'm Callum McFadgen</h1>
-            <p>Your tagline or intro text</p>
-            <nav>
+        <section id="start">
+        <header>
+            <div class="logo">
+                <a href="#start">CM</a>
+            </div>
+            <nav class="desktop-nav">
                 <ul>
                     <li><a href="#start">Start</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="menu-icon">
+                <a href="javascript:;" id="menu-toggle" onclick="toggle_visibility('mobile-nav');"><i class="fa fa-bars"></i></a>
+            </div>
+            <nav id="mobile-nav">
+                <ul>
+                    <li><a href="#start">Start</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </header>
+        <div class="start">
+            <h1>CALLUM MCFADGEN</h1>
+            <p>FULL-STACK WEB DEVELOPER</p>
+            <div class="start-icons">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/callum-mcfadgen/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/CallumMcFadgen"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.facebook.com/callum.mcfadgen"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/callum_mcfadgen"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
 
         <section id="about">
             <article>
                 <div class="article-heading">
-                    <h2>About me</h2>
+                    <h2>About Me</h2>
                     <p>Kia ora</p>
                 </div>
                 <div class="article-content">
-                    <p>Integer ligula massa, accumsan in sollicitudin maximus, pharetra aliquet risus. Curabitur orci ipsum, rutrum eu orci ac, venenatis efficitur felis. Duis ut risus ultrices, venenatis arcu vitae, rhoncus nibh. Nunc a orci sed augue aliquet ornare. Cras aliquam orci in libero facilisis commodo. Fusce eu posuere dui, non molestie elit. Aliquam aliquam porttitor sapien, ac placerat orci semper interdum. Quisque ut varius magna. Suspendisse lacinia tincidunt turpis, feugiat accumsan tortor facilisis id. Etiam aliquet hendrerit faucibus.
-                    <p></p>
+                    <p>Ko te moemoea a Maui kia haere ngatahi ai ratou ko ona tuakana ki te hii ika. I te hokinga mai o ona tuakana ki tatahi, ka kii atu a Maui, “ka taea e au te haramai i to koutou na taha ki te hii ika?” Engari, ko te whakautu o ona tuakana ki a ia ano, “Kao, he rangatahi noa iho koe. Kaore he wahi mau kei te waka nei, na reira me noho tau ki tatahi ke”.</p>
+                    <br>
+                    <p>Ki ta Maui e kii ai, “Kaore au e whakahoha i a koutou, ka noho hei karetao noa iho, koinei taku whakapono ki a koutou.” Ko te whakautu o te tuakana, “Na to hiroki ka pohehe matou he kai noa iho ma nga ika”. Ka riri haere a Maui. “Maku e whai kaha, whai mana hei whakamana i ahau ano”, noku te mana hei whakaarahi i oku tuakana. Ka whakaritea e Maui he tatai hei whakamanahia i ona ake pukenga mo tenei mea te hii-ika. I tetahi po i a Maui e noho tau ana, ka timatahia e Maui ki te rarangahia he rakau hii-ika. I a ia e rarangahia e waiatatia e Maui tetahi karakia tawhito hei whakakaha i te rakau hii-ika.</p>
+                    <br>
+                    <p>Ka tohea ki uta te waka e nga tuakana, engari ahua rereke te ahua o te waka. Ka kii mai, “Kei te ahua taumaha te waka nei, kei te hoe tahi tatou, kao ranei?” Ka kii atu tetahi, “na to kaha kai i nga kumara te take” Ka kii atu tetahi ano, “Katia to korua mahi whakatoi”. I to ratou taenga atu ki te wahi taunga ika, ka puta mai a Maui, aue ko te ohorere o ona tuakana! “He aha.” “He aha tau?” “To mahi hianga e Maui.” “Ko koe te take e kore ai matou e whiwhi ika ana, ko koe ke”</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="skills">
+            <article>
+                <div class="article-heading">
+                    <h2>Skills</h2>
+                    <p>My skills</p>
+                </div>
+                <div class="article-content">
+                    <p>1. Integer ligula massa</p>
+                    <p>2. Integer ligula massa</p>
                 </div>
             </article>
         </section>
@@ -76,30 +125,31 @@
                     <p>Get in touch</p>
                 </div>
                 <div class="article-content">
-                    <p>You can find me in these places.</p>
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/callum-mcfadgen/">linkedin</a></li>
-                        <li><a href="https://www.facebook.com/callum.mcfadgen">facebook</a></li>
-                        <li><a href="https://twitter.com/callum_mcfadgen">twitter</a></li>
-                        <li><a href="#">Neocities</a></li>
-                    </ul>
+                    <form class="form">
+                        <label>Email*</label>
+                        <input type="email" required="true">
+                        <label>Subject</label>
+                        <input type="text">
+                        <label>Message*</label>
+                        <textarea style="height:200px" required="true"></textarea>
+                        <button>Send</button>
+                    </form>
                 </div>
             </article>
         </section>
 
         <footer>
-            <div>
-                <p>© Copyright 2021 &nbsp;&nbsp; | &nbsp;&nbsp; Callum McFadgen &nbsp;&nbsp; | &nbsp;&nbsp; All Rights Reserved</p>
-            </div>
-            <a href="javascript:;" id="menu-toggle" onclick="toggle_visibility('mobile-nav');">Menu</a>
-            <nav id="mobile-nav">
+            <div class="footer-icons">
                 <ul>
-                    <li><a href="#start">Start</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://www.linkedin.com/in/callum-mcfadgen/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/CallumMcFadgen"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.facebook.com/callum.mcfadgen"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/callum_mcfadgen"><i class="fa fa-twitter"></i></a></li>
                 </ul>
-            </nav>
+            </div>
+            <div class="copyright-info">
+                <p>© 2021 Copyright Callum McFadgen</p>
+            </div>
         </footer>
         
     </div>

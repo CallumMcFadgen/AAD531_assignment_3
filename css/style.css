@@ -1,133 +1,413 @@
 html {
     font-size: 1rem;
-    height: 100%; 
+    height: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
 }
 
-/* portrait iPhone, portrait 480x320 phones (Android) */ 
+/* portrait iPhone, portrait 480x320 phones (Android) ****************************************/
 body {
-    background: red;
-    height: 100%; 
+    height: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
 }
-
 
 .wrapper {
     min-height: 100vh;
+    background-color: #000000;
 }
 
 header {
+    height: 8vh;
+    position: fixed;
     min-width: 100%;
+    max-width: 100%;
+    border-bottom: 1px solid #ffffff;
+    padding: none;
+    margin: none;
+    background-color: black;
 }
 
-nav {
-    position: fixed;
+.logo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: left;
+    width: 10%;
+    padding-left: 10%;
+}
+
+.logo a {
+    color: #ffffff;
+    font-family: "Heebo", Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.desktop-nav {
     display: none;
+}
+
+.menu-icon {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 8vh;
+    padding-right: 10%;
 }
 
 /* menu button */
 #menu-toggle {
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: transparent;
+}
+#menu-toggle:hover {
+    color: #368CE7;
+}
+#menu-toggle:active {
+    color: #ffffff;
+}
+
+/* menu links */
+#mobile-nav {
     position: fixed;
+    display: none;
+    flex-direction: column;
+    top: 8vh;
     z-index: 100;
-    top: 0;
-    right: 0;
-    display: inline-block;
-    background: yellow;
-    padding: 10px;
-  }
-  
-#start, 
-#about,
-#work, 
-#contact {
+    background-color: #000000;
+    border-bottom: 1px solid #ffffff;
+    min-width: 100%;
+    max-width: 100%;
+    padding-left: 10%;
+}
+
+#mobile-nav ul {
+    margin: 0.5% 0 5% 0;
+}
+
+#mobile-nav ul li {
+    margin-bottom: 1.5%;
+}
+#mobile-nav ul li:last-child {
+    margin-bottom: 0%;
+}
+
+#mobile-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline;
+    font-family: 'Open Sans', Tahoma, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+#mobile-nav ul li a:hover {
+    color: #368CE7;
+}
+#mobile-nav ul li a:active {
+    color: #ffffff;
+}
+
+.start {
+    min-width: 100%;
+    max-width: 100%;
+    /* display: block; */
+    min-height:100vh;
+    background: url(../images/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.start h1 {
+    min-width: 100%;
+    max-width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Heebo", Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.start p {
+    padding: 0.5% 0 0 0;
+    min-width: 100%;
+    max-width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Open Sans', Tahoma, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.start-icons {
+    width: 100%;
+    padding: 8% 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.start-icons ul {
+    width: 100%;
+    text-align: center;
+}
+
+.start-icons ul li {
+    display: inline;
+    margin-right: 2%;
+}
+.start-icons ul li:last-child {
+    margin-right: 0%;
+}
+
+.start-icons ul li a {
+    font-size: 2.25rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+.start-icons ul li a:hover{
+    color: #368CE7;
+}
+.start-icons ul li a:active{
+    color: #FFFFFF;
+}
+
+#about {
+    min-width: 100%;
+    max-width: 100%;
     display: block;
     min-height:100vh;
-  
+    background-color: #073F79
+}
+
+
+#skills {
+    min-width: 100%;
+    max-width: 100%;
+    display: block;
+    min-height:100vh;
+    background-color: #666666
+}
+
+#work {
+    min-width: 100%;
+    max-width: 100%;
+    display: block;
+    min-height:100vh;
+    background-color: #073F79
+}
+
+#contact {
+    min-width: 100%;
+    max-width: 100%;
+    display: block;
+    min-height:100vh;
+    background-color: #666666
+}
+
+.article-heading h2 {
+    margin: 0 auto 0 auto;
+    padding: 0 0 0.75% 0;
+    min-width: 40%;
+    max-width: 40%;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Heebo", Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    border-bottom: 2px #ffffff solid;
+}
+
+.article-heading p {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0.75% 0 0.75% 0;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Open Sans', Tahoma, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+.article-content {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0.75% 0 0.75% 0;
+}
+
+.article-content p {
+    padding: 0 10% 0 10%;
+    color: #ffffff;
+    font-family: 'Open Sans', Tahoma, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 
 footer {
     min-width: 100%;
-    border-top: thin black solid;
+    max-width: 100%;
+    border-top: thin #ffffff solid;
+    background-color: black;
 }
 
-/* menu links */
-footer nav {
-    z-index: 100;
-    top: 50px;
-    right: 0;
-    background: yellow;
-    padding: 1%; 
+.footer-icons {
+    width: 100%;
+    padding: 3% 0 2% 0 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
+.footer-icons ul {
+    width: 100%;
+    text-align: center;
+}
+
+.footer-icons ul li {
+    display: inline;
+    margin-right: 3%;
+}
+.footer-icons ul li:last-child {
+    margin-right: 0%;
+}
+
+.footer-icons ul li a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer-icons ul li a:hover{
+    color: #368CE7;
+}
+.footer-icons ul li a:active{
+    color: #FFFFFF;
+}
+
+.copyright-info {
+    font-family: 'Open Sans', Tahoma, sans-serif;
+    padding: 2% 0 3% 0 ;
+    font-size: 0.9rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 img {
     width: 100%;
     max-width: 100%;
-    height: auto;  
+    height: auto;
 }
 
 
 
-/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) ****************************************/
 @media (min-width: 600px) {
 
-    body {
-        background: green;
+    header {
     }
 
+    .footer-icons {
+        padding: 2% 0 1% 0 ;
+    }
+
+    .copyright-info {
+        padding: 1% 0 2% 0 ;
+        font-size: 1rem;
+    }
 
 }
 
+/* landscape tablets, laptops, and desktops *****************************************/
+@media (min-width: 1025px) {
 
-
-/* landscape tablets, laptops, and desktops */ 
-@media (min-width: 1025px) { 
-
-    body {
-        background: blue;
+    .desktop-nav {
+        float: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 8vh;
+        padding-right: 10%;
+        width: 60%;
     }
 
-    header nav {
-        display: block; /* this brings our header nav back */
-        background: yellow;
-        width: 100%;
-        left: 0;
-        padding: 1% 0 1% 0;
-        top: 0;
+    .desktop-nav ul {
+        text-align: right;
+    }
+
+    .desktop-nav ul li {
+        margin-left: 4%;
+        display: inline-block;
+    }
+
+    .desktop-nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        display: inline;
+        font-family: 'Open Sans', Tahoma, sans-serif;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    .desktop-nav ul li a:hover {
+        color: #368CE7;
+    }
+    .desktop-nav ul li a:active {
+        color: #ffffff;
+    }
+    .desktop-nav ul li a:first-child {
+        margin-left: 0%;
+    }
+
+    #mobile-nav {
+        display: none;
     }
 
     #menu-toggle {
         display: none;
     }
 
-    nav ul {
-        text-align: center;  
-    }
-        
-    nav ul li {
-        display: inline;
+    .start {
+        padding-top: 4.5%;
+        min-height:95.5vh;
     }
 
-    #start, 
-    #about,
-    #work, 
+    #about {
+        padding-top: 6%;
+        min-height:95.5vh;
+    }
+
+    #skills {
+        padding-top: 4.5%;
+        min-height:95.5vh;
+    }
+
+    #work {
+        padding-top: 4.5%;
+        min-height:95.5vh;
+    }
+
     #contact {
-      display: block;
-      padding-top: 4%;
-      min-height:96vh;
+      padding-top: 4.5%;
+      min-height:95.5vh;
     }
-      
+
+    .footer-icons {
+        padding: 2% 0 1% 0 ;
+    }
+
+    .copyright-info {
+        padding: 1% 0 2% 0 ;
+        font-size: 1rem;
+    }
+
 }
-  
 
 
-
-/* body {
-    background: url(../images/background.jpg) no-repeat center center fixed;
-    background-size: cover;
-} */
-  
