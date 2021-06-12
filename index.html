@@ -5,27 +5,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="author" content="Callum McFadgen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/c1511ce26c.js" crossorigin="anonymous"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">     
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Callum McFadgen | Developer</title>
-
-    <script type="text/javascript">
-
-          function toggle_visibility(id) {
-             var e = document.getElementById(id);
-             if(e.style.display == 'none')
-                e.style.display = 'flex';
-             else if (e.style.display = 'flex')
-                e.style.display = 'none';
-          }
-
-    </script>
-
 </head>
 
 
@@ -47,40 +36,38 @@
                 </ul>
             </nav>
             <div class="menu-icon">
-                <a href="javascript:;" id="menu-toggle" onclick="toggle_visibility('mobile-nav');"><i class="fa fa-bars"></i></a>
+                <a href="javascript:;" id="menu-toggle" class="show-hide-menu"><i class="fa fa-bars"></i></a>
             </div>
             <nav id="mobile-nav">
                 <ul>
-                    <li><a href="#start">Start</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#start" class="show-hide-menu">Start</a></li>
+                    <li><a href="#about" class="show-hide-menu">About</a></li>
+                    <li><a href="#skills" class="show-hide-menu">Skills</a></li>
+                    <li><a href="#work" class="show-hide-menu">Work</a></li>
+                    <li><a href="#contact" class="show-hide-menu">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <div class="start">
-            <h1>CALLUM MCFADGEN</h1>
-            <p>FULL-STACK WEB DEVELOPER</p>
-            <div class="start-icons">
+            <h1 id="start-heading">CALLUM MCFADGEN</h1>
+            <p id="start-subheading">FULL-STACK WEB DEVELOPER</p>
+            <div class="start-icons" id="start-icons">
                 <ul>
                     <li><a href="https://www.linkedin.com/in/callum-mcfadgen/"><i class="fa fa-linkedin"></i></a></li>
                     <li><a href="https://github.com/CallumMcFadgen"><i class="fa fa-github"></i></a></li>
                     <li><a href="https://www.facebook.com/callum.mcfadgen"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/callum_mcfadgen"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://twitter.com/callum_mcfadgen"><i lass="fa fa-twitter"></i></a></li>
+                    <li><a href="mailto:callum.mcfadgen@gmail.com"><i class="fa fa-envelope"></i></a></li>
                 </ul>
             </div>
         </div>
     </section>
 
-
-
-
         <section id="about">
             <article>
                 <div class="article-heading">
                     <h2>About Me</h2>
-                    <p>Kia ora</p>
+                    <p>Hi, Im <strong>Callum Mcfadgen</strong>, a recently graduated <strong>Full-stack Software Developer</strong> living and working in sunnny Nelson.</p>
                 </div>
                 <div class="article-content">
                     <p>Ko te moemoea a Maui kia haere ngatahi ai ratou ko ona tuakana ki te hii ika. I te hokinga mai o ona tuakana ki tatahi, ka kii atu a Maui, “ka taea e au te haramai i to koutou na taha ki te hii ika?” Engari, ko te whakautu o ona tuakana ki a ia ano, “Kao, he rangatahi noa iho koe. Kaore he wahi mau kei te waka nei, na reira me noho tau ki tatahi ke”.</p>
@@ -96,11 +83,75 @@
             <article>
                 <div class="article-heading">
                     <h2>Skills</h2>
-                    <p>My skills</p>
+                    <p>The following <strong>technologies</strong> are some of the many <strong>design & development</strong> tools that I use on a daily basis.</p>
                 </div>
-                <div class="article-content">
-                    <p>1. Integer ligula massa</p>
-                    <p>2. Integer ligula massa</p>
+                <div class="skills-content">
+                    <div class="w3-row">
+                        <div class="w3-col w3-center s6 m4 l3">
+                            <i class="fab fa-angular"></i>
+                            <p>Angular.js</p>
+                        </div>
+                        <div class="w3-col w3-center s6 m4 l3">
+                            <i class="fab fa-html5"></i>
+                            <p>HTML5</p>
+                        </div>
+                        <div class="w3-col w3-center s6 m4 l3">
+                            <i class="fab fa-css3-alt"></i>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="w3-col w3-center s6 m4 l3">
+                            <i class="fab fa-js-square"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="w3-col w3-center s6 m4 l3">
+                            <i class="fas fa-database"></i>
+                            <p>MySQL</p>
+                        </div>
+                        <div class="w3-col w3-center s6 m4 l3">
+                            <i class="fab fa-git-alt"></i>
+                            <p>Git</p>
+                        </div>
+                        <div class="w3-col w3-center s6 m4 l3">
+                            <i class="fab fa-bootstrap"></i>
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="w3-col w3-center s6 m4 l3">
+                            <i class="fa fa-github"></i>
+                            <p>GitHub</p>
+                        </div>
+                        <div class="w3-col w3-center s6 m4 l3">
+                            <i class="fab fa-node-js"></i>
+                            <p>Node.js</p>
+                        </div>
+                        <div class="w3-col w3-center s6 m4 l3">
+                            <i class="fab fa-npm"></i>
+                            <p>NPM</p>
+                        </div>
+                        <div class="w3-col w3-center s6 m4 l3">
+                            <i class="fab fa-react"></i>                            
+                            <p>React</p>
+                        </div>
+                        <div class="w3-col w3-center s6 m4 l3">
+                            <i class="fab fa-trello"></i>                           
+                            <p>Trello</p>
+                        </div>
+                        <div class="w3-col w3-center s6 m4 l3">
+                            <i class="fab fa-vuejs"></i>
+                            <p>Vue.js</p>
+                        </div>
+                        <div class="w3-col w3-center s6 m4 l3">
+                            <i class="fab fa-slack"></i>
+                            <p>Slack</p>
+                        </div>
+                        <div class="w3-col w3-center s6 m4 l3">
+                            <i class="fas fa-hashtag"></i>                         
+                            <p>C#</p>
+                        </div>
+                        <div class="w3-col w3-center s6 m4 l3">
+                            <i class="fas fa-server"></i>                          
+                            <p>SQL Server</p>
+                        </div>
+                    </div>
                 </div>
             </article>
         </section>
@@ -109,7 +160,7 @@
             <article>
                 <div class="article-heading">
                     <h2>Work</h2>
-                    <p>The work I've created</p>
+                    <p>In additon to creating several of my own projects, I have also been involved in the development and maintenance of several applications for my current employer, <a href="https://www.airsquare.com/">Airsquare Ltd</a>.</p>
                 </div>
                 <div class="article-content">
                     <p>1. Integer ligula massa</p>
@@ -122,16 +173,16 @@
             <article>
                 <div class="article-heading">
                     <h2>Contact</h2>
-                    <p>Get in touch</p>
+                    <p>Get in touch with me via the form below</p>
                 </div>
                 <div class="article-content">
-                    <form class="form">
+                    <form class="contact-form">
                         <label>Email*</label>
                         <input type="email" required="true">
                         <label>Subject</label>
                         <input type="text">
                         <label>Message*</label>
-                        <textarea style="height:200px" required="true"></textarea>
+                        <textarea required="true"></textarea>
                         <button>Send</button>
                     </form>
                 </div>
@@ -145,6 +196,7 @@
                     <li><a href="https://github.com/CallumMcFadgen"><i class="fa fa-github"></i></a></li>
                     <li><a href="https://www.facebook.com/callum.mcfadgen"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="https://twitter.com/callum_mcfadgen"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="mailto:callum.mcfadgen@gmail.com"><i class="fa fa-envelope"></i></a></li>
                 </ul>
             </div>
             <div class="copyright-info">
@@ -153,6 +205,50 @@
         </footer>
         
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('.show-hide-menu').click(function() {
+                $('#mobile-nav').slideToggle("fast");
+            });
+        });
+
+        $(document).on('click', 'a[href^="#"]', function (e) {
+            var id = $(this).attr('href');
+            var $id = $(id);
+            if ($id.length === 0) {
+                return;
+            }
+            e.preventDefault();
+            var pos = $(id).offset().top;
+            $('body, html').animate({ scrollTop: pos });
+        });
+
+        window.onload = function () {
+                setTimeout(displayHeading, 800);
+                setTimeout(displaySubHeading, 1000);
+                setTimeout(displayHeadingIcons, 1200);
+            };
+
+            displayHeading = function () {
+                 document.getElementById("start-heading").style.display = "block";
+            };
+
+            displaySubHeading = function () {
+                document.getElementById("start-subheading").style.display = "block";
+            };
+
+            displayHeadingIcons = function () {
+                document.getElementById("start-icons").style.display = "block";
+            };
+
+
+
+
+    </script>
+
 </body>
 
 </html>

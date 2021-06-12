@@ -79,27 +79,29 @@ header {
     position: fixed;
     display: none;
     flex-direction: column;
-    top: 8vh;
+    top: 7.9vh;
     z-index: 100;
     background-color: #000000;
     border-bottom: 1px solid #ffffff;
     min-width: 100%;
     max-width: 100%;
-    padding-left: 10%;
 }
 
 #mobile-nav ul {
-    margin: 0.5% 0 5% 0;
+    text-align: right;;
+    padding-right: 10%;
+    margin: 0% 0 3% 0;
 }
 
 #mobile-nav ul li {
-    margin-bottom: 1.5%;
+    margin-bottom: 1.25%;
 }
 #mobile-nav ul li:last-child {
     margin-bottom: 0%;
 }
 
 #mobile-nav ul li a {
+    opacity: 0.9;
     color: #ffffff;
     text-decoration: none;
     display: inline;
@@ -117,16 +119,28 @@ header {
 .start {
     min-width: 100%;
     max-width: 100%;
-    /* display: block; */
     min-height:100vh;
-    background: url(../images/background.jpg) no-repeat center center fixed;
+    background: url(../images/bg-start-small.jpg) no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+#start-heading {
+    display: none;
+}
+
+#start-subheading {
+    display: none;
+}
+
+#start-icons {
+    display: none;
+}
+
 .start h1 {
+    display: none;
     min-width: 100%;
     max-width: 100%;
     text-align: center;
@@ -134,17 +148,21 @@ header {
     font-family: "Heebo", Helvetica, sans-serif;
     font-size: 4rem;
     font-weight: 900;
+    animation-name: fadeIn;
+    animation-duration: 2.25s;
 }
 
 .start p {
-    padding: 0.5% 0 0 0;
+    padding: 2% 0 0 0;
     min-width: 100%;
     max-width: 100%;
     text-align: center;
     color: #ffffff;
     font-family: 'Open Sans', Tahoma, sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 600;
+    animation-name: fadeIn;
+    animation-duration: 2.25s;
 }
 
 .start-icons {
@@ -153,6 +171,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    animation-name: fadeIn;
+    animation-duration: 2.25s;
 }
 
 .start-icons ul {
@@ -169,7 +189,7 @@ header {
 }
 
 .start-icons ul li a {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     text-decoration: none;
     color: #ffffff;
 }
@@ -181,70 +201,168 @@ header {
 }
 
 #about {
+    padding: 18% 0 18% 0;
     min-width: 100%;
     max-width: 100%;
     display: block;
     min-height:100vh;
-    background-color: #073F79
+    background-color: #00244b
 }
 
-
 #skills {
+    padding: 18% 0 0 0;
     min-width: 100%;
     max-width: 100%;
     display: block;
     min-height:100vh;
-    background-color: #666666
+    background: url(../images/bg-skills-small.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.skills-content {
+    margin: 0 auto 0 auto;
+    min-width: 70%;
+    max-width: 70%;
+    display:block;
+    overflow: hidden;
+}
+
+.w3-col {
+    padding: 7% 0 7% 0 ;
+}
+
+.w3-col:last-child {
+    padding: 7% 0 15vh 0 ;
+}
+
+.w3-col i {
+    color: #ffffff;
+    font-size: 4.25rem;
+}
+
+.w3-col p {
+    padding-top: 12px;
+    color: #ffffff;
+    font-family: 'Open Sans', Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 #work {
+    padding: 18% 0 0 0;
     min-width: 100%;
     max-width: 100%;
     display: block;
     min-height:100vh;
-    background-color: #073F79
+    background-color: #00244b
 }
 
 #contact {
+    padding: 18% 0 0 0;
     min-width: 100%;
     max-width: 100%;
     display: block;
     min-height:100vh;
-    background-color: #666666
+    background: url(../images/bg-contact-small.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form label{
+    color: #ffffff;
+    padding: 2% 0 2% 10%;
+    font-family: 'Open Sans', Tahoma, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.contact-form input {
+    font-family: 'Open Sans', Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin: 0 auto 0 auto;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    font-family: 'Open Sans', Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin: 0 auto 0 auto;
+    min-width: 80%;
+    border-radius: 5px;
+    min-height: 180px;
+}
+
+.contact-form button {
+    margin: 4vh auto 10vh auto;
+    width: 45%;
+    text-align: center;
+    font-family: 'Open Sans', Tahoma, Sans-serif;
+    background-color: #00244b;
+    color: #ffffff;
+    border: 1px #ffffff solid;
+    padding: 1vh 2% 1vh 2%;
+    font-size: 125%;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;}
+.contact-form button:hover{
+    color: #368CE7;
+    border: 1px #368CE7 solid;
+}
+.contact-form button:active{
+    background-color: #FFFFFF;
 }
 
 .article-heading h2 {
     margin: 0 auto 0 auto;
-    padding: 0 0 0.75% 0;
-    min-width: 40%;
-    max-width: 40%;
+    padding: 0 0 3% 0;
+    min-width: 50%;
+    max-width: 50%;
     text-align: center;
     color: #ffffff;
     font-family: "Heebo", Helvetica, sans-serif;
     font-size: 2.5rem;
-    font-weight: 600;
-    border-bottom: 2px #ffffff solid;
+    font-weight: 700;
+    border-bottom: 3px #ffffff solid;
 }
 
 .article-heading p {
-    min-width: 100%;
-    max-width: 100%;
-    padding: 0.75% 0 0.75% 0;
+    margin: 0 auto 0 auto;
+    min-width: 70;
+    max-width: 70%;
+    padding: 3% 0 5% 0;
     text-align: center;
     color: #ffffff;
     font-family: 'Open Sans', Tahoma, sans-serif;
-    font-size: 1.75rem;
-    font-weight: 400;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height:1.9rem;
+}
+
+.article-heading p a:hover {
+    color: #368CE7;
+}
+.article-heading p a:active {
+    color: #ffffff;
 }
 
 .article-content {
     min-width: 100%;
     max-width: 100%;
-    padding: 0.75% 0 0.75% 0;
+    padding: 0.75% 10% 0.75% 10%;
 }
 
 .article-content p {
-    padding: 0 10% 0 10%;
     color: #ffffff;
     font-family: 'Open Sans', Tahoma, sans-serif;
     font-size: 1.25rem;
@@ -280,7 +398,7 @@ footer {
 }
 
 .footer-icons ul li a {
-    font-size: 2rem;
+    font-size: 1.75rem;
     text-decoration: none;
     color: #ffffff;
 }
@@ -314,6 +432,66 @@ img {
 
     header {
     }
+
+    .start {
+        background: url(../images/bg-start-medium.jpg) no-repeat center center fixed;
+    }
+
+    #skills {
+        padding: 8% 0 0 0;
+        background: url(../images/bg-skills-medium.jpg) no-repeat center center fixed;
+    }
+
+    .skills-content {
+        margin: 4% auto 0 auto;
+        min-width: 80%;
+        max-width: 80%;
+        display:block;
+        overflow: hidden;
+    }
+
+    .w3-col i {
+        color: #ffffff;
+        font-size: 5rem;
+    }
+    
+    .w3-col p {
+        padding-top: 12px;
+        color: #ffffff;
+        font-family: 'Open Sans', Tahoma, sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .tile i {
+        color: #ffffff;
+        font-size: 4rem;
+    }
+    
+    .tile p {
+        padding-top: 8px;
+        color: #ffffff;
+        font-family: 'Open Sans', Tahoma, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    #contact {
+        background: url(../images/bg-contact-medium.jpg) no-repeat center center fixed;
+    }
+
+    .article-heading p {
+        margin: 0 auto 0 auto;
+        min-width: 80;
+        max-width: 80%;
+        padding: 3% 0 1% 0;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Open Sans', Tahoma, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
 
     .footer-icons {
         padding: 2% 0 1% 0 ;
@@ -355,6 +533,7 @@ img {
         font-family: 'Open Sans', Tahoma, sans-serif;
         font-size: 1.1rem;
         font-weight: 600;
+        text-transform: uppercase;
     }
     .desktop-nav ul li a:hover {
         color: #368CE7;
@@ -367,7 +546,7 @@ img {
     }
 
     #mobile-nav {
-        display: none;
+        display: none !important;
     }
 
     #menu-toggle {
@@ -377,6 +556,11 @@ img {
     .start {
         padding-top: 4.5%;
         min-height:95.5vh;
+        background: url(../images/bg-start-large.jpg) no-repeat center center fixed;
+    }
+
+    .start-icons {
+        padding: 5% 0 0 0;
     }
 
     #about {
@@ -387,6 +571,28 @@ img {
     #skills {
         padding-top: 4.5%;
         min-height:95.5vh;
+        background: url(../images/bg-skills-large.jpg) no-repeat center center fixed;
+    }
+
+    .skills-content {
+        margin: 0 auto 0 auto;
+        min-width: 80%;
+        max-width: 80%;
+        display:block;
+        overflow: hidden;
+    }
+
+    .w3-col i {
+        color: #ffffff;
+        font-size: 6rem;
+    }
+    
+    .w3-col p {
+        padding-top: 12px;
+        color: #ffffff;
+        font-family: 'Open Sans', Tahoma, sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
     }
 
     #work {
@@ -397,6 +603,7 @@ img {
     #contact {
       padding-top: 4.5%;
       min-height:95.5vh;
+      background: url(../images/bg-contacts-large.jpg) no-repeat center center fixed;
     }
 
     .footer-icons {
@@ -408,6 +615,14 @@ img {
         font-size: 1rem;
     }
 
+}
+
+
+/* animations *****************************************/
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 
