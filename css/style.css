@@ -79,7 +79,7 @@ header {
     position: fixed;
     display: none;
     flex-direction: column;
-    top: 7.9vh;
+    top: 7.8vh;
     z-index: 100;
     background-color: #000000;
     border-bottom: 1px solid #ffffff;
@@ -149,7 +149,7 @@ header {
     font-size: 4rem;
     font-weight: 900;
     animation-name: fadeIn;
-    animation-duration: 2.25s;
+    animation-duration: 2.75s;
 }
 
 .start p {
@@ -162,7 +162,7 @@ header {
     font-size: 1.5rem;
     font-weight: 600;
     animation-name: fadeIn;
-    animation-duration: 2.25s;
+    animation-duration: 2.75s;
 }
 
 .start-icons {
@@ -172,7 +172,7 @@ header {
     flex-direction: row;
     justify-content: center;
     animation-name: fadeIn;
-    animation-duration: 2.25s;
+    animation-duration: 2.75s;
 }
 
 .start-icons ul {
@@ -302,7 +302,7 @@ header {
 }
 
 .contact-form button {
-    margin: 4vh auto 10vh auto;
+    margin: 4vh auto 12vh auto;
     width: 45%;
     text-align: center;
     font-family: 'Open Sans', Tahoma, Sans-serif;
@@ -367,6 +367,15 @@ header {
     font-family: 'Open Sans', Tahoma, sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
+    padding: 0 0 1vh 0;
+}
+.article-content p:last-child {
+    color: #ffffff;
+    font-family: 'Open Sans', Tahoma, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 0 0 0 0;
+    margin: 0 0 15vh 0;
 }
 
 footer {
@@ -437,8 +446,12 @@ img {
         background: url(../images/bg-start-medium.jpg) no-repeat center center fixed;
     }
 
+    #about {
+        padding: 10% 0 0 0;
+    }
+
     #skills {
-        padding: 8% 0 0 0;
+        padding: 10% 0 0 0;
         background: url(../images/bg-skills-medium.jpg) no-repeat center center fixed;
     }
 
@@ -476,8 +489,21 @@ img {
         font-weight: 500;
     }
 
+    #work {
+        padding: 10% 0 0 0;
+    }
+
     #contact {
+        padding: 10% 0 0 0;
         background: url(../images/bg-contact-medium.jpg) no-repeat center center fixed;
+    }
+
+    .contact-form label{
+        padding: 2% 0 1% 10%;
+    }
+    
+    .contact-form button {
+        width: 25%;
     }
 
     .article-heading p {
