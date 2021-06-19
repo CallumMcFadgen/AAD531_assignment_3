@@ -1,3 +1,4 @@
+
 /* * {
     background: #000 !important;
     color: #0f0 !important;
@@ -208,8 +209,20 @@ header {
     background-color: #00244b
 }
 
+#about .article-content p {
+    margin: 0 auto 3vh auto;
+    color: #ffffff;
+    font-family: 'Open Sans', Tahoma, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+#about .article-content p:last-child {
+    margin: 0 auto 10vh auto;
+}
+
 #skills {
-    padding: 18% 0 0 0;
+    padding: 18% 0 18% 0;
     min-width: 100%;
     max-width: 100%;
     display: block;
