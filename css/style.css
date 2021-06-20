@@ -150,6 +150,7 @@ header {
 
 .start p {
     padding: 2% 0 0 0;
+    display: none;
     min-width: 100%;
     max-width: 100%;
     text-align: center;
@@ -228,7 +229,7 @@ header {
     display: block;
     min-height:100vh;
     background: url(../images/bg-skills-small.jpg) no-repeat center center fixed;
-    background-size: cover;
+    background-size: cover !important;
 }
 
 .skills-content {
@@ -363,7 +364,7 @@ header {
     display: block;
     min-height:100vh;
     background: url(../images/bg-contact-small.jpg) no-repeat center center fixed;
-    background-size: cover;
+    background-size: cover !important;
 }
 
 .contact-heading h2 {
@@ -569,7 +570,6 @@ img {
 
     .start h1 {
         padding: 0 1% 0 1%;
-        display: none;
         min-width: 100%;
         max-width: 100%;
         text-align: center;
@@ -666,6 +666,7 @@ img {
     }
 
     .work-heading h2 {
+        padding: 0 0 1.5% 0;
         min-width: 50%;
         max-width: 50%;
         font-size: 3.5rem;
@@ -846,7 +847,6 @@ img {
 
     .start h1 {
         padding: 0 0 0 0;
-        display: none;
         min-width: 100%;
         max-width: 100%;
         text-align: center;
@@ -992,7 +992,6 @@ img {
         font-weight: 500;
         line-height:1.9rem;
     }
-    
 
     .contact-form label{
         padding: 2% 0 0.75% 20%;
